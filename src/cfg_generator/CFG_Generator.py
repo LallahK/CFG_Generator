@@ -3,8 +3,6 @@ from random import random, sample
 from math import exp, pi, sqrt
 from numpy.random import chisquare, normal
 
-cfg = None
-
 __extra_productions = 2
 __number_non_terminals = 0
 __terminal_ratios = 0.0
@@ -66,8 +64,6 @@ Converts the integer value provided into a base 26 number, and this number is
 directly mapped onto the arabic [A-Za-z] alphabet
 '''
 def __gen_terminals(nt, t):
-  global cfg
-
   nts = []
   ts = []
 
@@ -334,7 +330,7 @@ def __get_prob(df):
     x = -1
   return 1 + x
 
-def print_cfg(nts, ts, prs):
+def print_grammar(nts, ts, prs):
   non_terminals = "Non-terminals:"
   for nt in nts:
     non_terminals += " " + nt

@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: cfg-generator
-Version: 0.0.1
+Version: 0.0.2
 Summary: A tool to be used to generate random Context-Free Grammars
 Home-page: https://github.com/LallahK/CFG_Generator
 Author: Abdullah Karbanee
